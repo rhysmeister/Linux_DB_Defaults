@@ -1,0 +1,8 @@
+---
+# tasks file for Linux_DB_Defaults
+   - name: Set swappiness to 0
+     sysctl:
+       name: vm.swappiness
+       value: 0
+       state: present
+       reload: yes
